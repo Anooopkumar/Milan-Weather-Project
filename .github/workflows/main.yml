@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run script
-        run: Data Management.ipynb # Agar aapki file ka naam alag hai toh wo likhein
+        run: milan_weather.py # Agar aapki file ka naam alag hai toh wo likhein
 
       - name: Commit and Push changes
         run: |
