@@ -41,7 +41,7 @@ def sync_data():
         current_temp = float(''.join(c for c in temp_text if c.isdigit() or c == '.' or c == '-'))
         
         # Fahrenheit ko Celsius mein badalna agar temp 35 se upar hai
-        if current_temp > 35:
+        if current_temp > 10:
             current_temp = round((current_temp - 32) * 5/9, 1)
             
         current_desc = soup.find("div", {"id": "qlook"}).find("p").text
